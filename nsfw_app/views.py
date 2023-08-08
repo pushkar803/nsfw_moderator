@@ -8,7 +8,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.core.files.storage import default_storage
 from django.core.files.base import ContentFile
 from nsfw_project import settings
-from .nsfw.nsfw_detector import predict
+from nsfw_app.nsfw.nsfw_detector import predict
 
 model = predict.load_model('nsfw_app/nsfw/model/')
 
